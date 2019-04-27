@@ -1,19 +1,19 @@
-// Motor A connections
-int enA = 11;
+// Motor A connections Front Left
+int enA = 8;
 int in1 = 9;
-int in2 = 8;
-// Motor B connections
-int enB = 10;
-int in3 = 7;
-int in4 = 6;
-// Motor C connections
+int in2 = 10;
+// Motor B connections Front Right
+int enB = 13;
+int in3 = 11;
+int in4 = 12;
+// Motor C connections Back Left
 int enC = 2;
 int in5 = 3;
 int in6 = 4;
-// Motor D connections
-int enD = 5;
-int in7 = 11;
-int in8 = 12;
+// Motor D connections Back Right
+int enD = 7;
+int in7 = 5;
+int in8 = 6;
 
 void setup()
 {
@@ -109,7 +109,7 @@ void speedControl()
   digitalWrite(in8, HIGH);
   
   // Accelerate from zero to maximum speed
-  for (int i = 0; i < 256; i++)
+  for (int i = 0; i < 255; i++)
   {
     analogWrite(enA, i);
     analogWrite(enB, i);
