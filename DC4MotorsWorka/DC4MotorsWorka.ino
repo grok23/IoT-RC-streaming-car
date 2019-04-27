@@ -1,19 +1,19 @@
 // Motor A connections Front Left
-int enA = 8;
-int in1 = 9;
+int enA = 9;
+int in1 = 8;
 int in2 = 10;
 // Motor B connections Front Right
 int enB = 13;
 int in3 = 11;
 int in4 = 12;
 // Motor C connections Back Left
-int enC = 2;
-int in5 = 3;
+int enC = 3;
+int in5 = 2;
 int in6 = 4;
 // Motor D connections Back Right
-int enD = 7;
+int enD = 6;
 int in7 = 5;
-int in8 = 6;
+int in8 = 7;
 
 void setup()
 {
