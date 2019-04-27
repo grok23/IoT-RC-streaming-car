@@ -18,26 +18,6 @@ int enD = 6;
 int in7 = 5;
 int in8 = 7;
 
-
-//declare int for input from serial monitor 
-int direction = 0;
-
-// Set all the motor control pins to outputs for A and B motors
-//pinMode(enA, OUTPUT);
-//pinMode(enB, OUTPUT);
-//pinMode(in1, OUTPUT);
-//pinMode(in2, OUTPUT);
-//pinMode(in3, OUTPUT);
-//pinMode(in4, OUTPUT);
-
-  // Set all the motor control pins to outputs for C and D motors
-//pinMode(enC, OUTPUT);
-//pinMode(enD, OUTPUT);
-//pinMode(in5, OUTPUT);
-//pinMode(in6, OUTPUT);
-//pinMode(in7, OUTPUT);
-//pinMode(in8, OUTPUT);
-
 void _mForward()
 { 
 //all forward at mid speed
@@ -116,7 +96,7 @@ digitalWrite(in5, LOW);
 digitalWrite(in6, LOW);
 digitalWrite(in7, LOW);
 digitalWrite(in8, LOW);
-Serial.println("Stop!");
+Serial.println("stop");
 }
 void stateChange()
 {
@@ -164,6 +144,10 @@ else if(getstr=='d')
 {
 _mright();
 delay(10);
+}
+else if(getstr=='1')
+{
+stateChange();
 }
 else if(getstr=='q')
 {
