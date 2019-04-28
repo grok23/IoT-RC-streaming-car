@@ -1,3 +1,6 @@
+#include <WiFi.h>
+#include <Bridge.h>
+
 int LED=13;
 volatile int state = LOW;
 char getstr;
@@ -60,9 +63,9 @@ digitalWrite(in2, HIGH);
 digitalWrite(in5, LOW);  //back left motor
 digitalWrite(in6, HIGH);
 digitalWrite(in3, HIGH); //front right
-digitalWrite(in7, LOW);
-digitalWrite(in8, HIGH); //back right
 digitalWrite(in4, LOW);
+digitalWrite(in7, HIGH); //back right
+digitalWrite(in8, LOW); 
 analogWrite(enA, 100);
 analogWrite(enB, 100);
 analogWrite(enC, 100);
@@ -75,11 +78,11 @@ void _mright()
 digitalWrite(in1, HIGH); //front left motor
 digitalWrite(in2, LOW);
 digitalWrite(in5, HIGH); //back left motor
-digitalWrite(in6, LOW);
+digitalWrite(in6, LOW); 
 digitalWrite(in3, LOW);  //front right
-digitalWrite(in7, HIGH);
-digitalWrite(in8, LOW);   //back right
-digitalWrite(in4, HIGH);
+digitalWrite(in4, HIGH);  
+digitalWrite(in7, LOW);  //back right
+digitalWrite(in8, HIGH);  
 analogWrite(enA, 100);
 analogWrite(enB, 100);
 analogWrite(enC, 100);
