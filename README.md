@@ -11,4 +11,5 @@ so that PWM control of speeds worked.
 
 DCMoSerialCntrl is a sketch that gave us our first manual control of direction using the keyboard to control directions 
 via the serial monitor
+
 The 2 Blynk serial sketches are a PITA and need to be fixed. Possibly need to set up and run our own Blynk server as they very rarely ever connect properly and never actually return a value from the either the button or the terminal keyboard in the app.
