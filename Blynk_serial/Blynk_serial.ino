@@ -1,6 +1,5 @@
 #include <Blynk.h>
-#define BLYNK_PRINT Serial
-#include <Bridge.h>
+#include <WiFi.h>
 #include <BlynkSimpleYun.h>
 
 // You should get Auth Token in the Blynk App.
@@ -21,8 +20,8 @@ void setup()
   // You can also specify server:
   //Blynk.begin(auth, "blynk-cloud.com", 80);
   //Blynk.begin(auth, (192,168,1,5), 8080);
-}
-BLYNK_WRITE(V6) // v6 is the virtual pin number.
+}// v6 is the virtual pin number.
+BLYNK_WRITE (V6) 
 {
   Serial.println(param.asStr());
 }
