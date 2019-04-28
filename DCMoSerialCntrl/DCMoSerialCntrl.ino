@@ -66,10 +66,10 @@ digitalWrite(in3, HIGH); //front right
 digitalWrite(in4, LOW);
 digitalWrite(in7, HIGH); //back right
 digitalWrite(in8, LOW); 
-analogWrite(enA, 100);
-analogWrite(enB, 100);
-analogWrite(enC, 100);
-analogWrite(enD, 100);
+analogWrite(enA, 120);
+analogWrite(enB, 120);
+analogWrite(enC, 120);
+analogWrite(enD, 120);
 Serial.println("left");
 }
 void _mright()
@@ -83,10 +83,10 @@ digitalWrite(in3, LOW);  //front right
 digitalWrite(in4, HIGH);  
 digitalWrite(in7, LOW);  //back right
 digitalWrite(in8, HIGH);  
-analogWrite(enA, 100);
-analogWrite(enB, 100);
-analogWrite(enC, 100);
-analogWrite(enD, 100);
+analogWrite(enA, 120);
+analogWrite(enB, 120);
+analogWrite(enC, 120);
+analogWrite(enD, 120);
 Serial.println("right");
 }
 void _mStop()
