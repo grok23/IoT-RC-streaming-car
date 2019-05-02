@@ -13,3 +13,8 @@ DCMoSerialCntrl is a sketch that gave us our first manual control of direction u
 via the serial monitor
 
 The 2 Blynk serial sketches are a PITA and need to be fixed. Possibly need to set up and run our own Blynk server as they very rarely ever connect properly and never actually return a value from the either the button or the terminal keyboard in the app.
+
+
+The two latest blynk apps are now working with he issue for the last two is the possiblity of port 80 being blocked on our home connections which is what was blocking the blynk app from connecting.
+
+In addition the layout of the Blynk mobile app has been uploaded in a zipped file.
