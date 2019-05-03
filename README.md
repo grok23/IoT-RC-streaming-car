@@ -12,9 +12,9 @@ so that PWM control of speeds worked.
 DCMoSerialCntrl is a sketch that gave us our first manual control of direction using the keyboard to control directions 
 via the serial monitor
 
-The 2 Blynk serial sketches are a PITA and need to be fixed. Possibly need to set up and run our own Blynk server as they very rarely ever connect properly and never actually return a value from the either the button or the terminal keyboard in the app.
+The 2 Blynk serial sketches work, (but you must make sure to enable port forwarding of ports 8441, 8442, and 8443 for them to work properly) . Possibly need to set up and run our own Blynk server as they very rarely ever connect properly and never actually return a value from the either the button or the terminal keyboard in the app (port forwarding solved this).
 
 
-The two latest blynk apps are now working with the issue for the last two is the possiblity of port 80 being blocked on our home connections which is what was blocking the blynk app from connecting.
+The two latest blynk apps are now working with the issue for the last two is the possiblity of ports 8441, 8442, and 8443 being blocked on our home connections which is what was blocking the blynk app from connecting.
 
 In addition the layout of the Blynk mobile app has been uploaded in a zipped file.
