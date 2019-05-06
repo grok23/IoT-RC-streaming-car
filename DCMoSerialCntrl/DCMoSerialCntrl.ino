@@ -1,5 +1,6 @@
 #include <WiFi.h>
 #include <Bridge.h>
+#include <Process.h>
 
 int LED=13;
 volatile int state = LOW;
@@ -109,7 +110,11 @@ digitalWrite(LED, state);
 void setup()
 { 
 pinMode(LED, OUTPUT);
+Bridge.begin();
 Serial.begin(9600);
+while (!Serial);
+Process p;
+p.runShellCommand("/usr/bin/cam.sh");
 pinMode(in1,OUTPUT);
 pinMode(in2,OUTPUT);
 pinMode(in3,OUTPUT);
@@ -127,6 +132,7 @@ _mStop();
 
 void loop()
 { 
+
 getstr=Serial.read();
 if(getstr=='w')
 {
