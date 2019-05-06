@@ -20,13 +20,13 @@ The two latest blynk apps are now working with the issue for the last two is the
 In addition the layout of the Blynk mobile app has been uploaded in a zipped file.
 
 automated webcam streaming by adding a shellscript to the Yun and then running it from within the control .ino files
-to do this use putty and navigate to the /usr/bin/ folder and create a shellscript file with:     touch cam.sh
+to do this use putty and navigate to the /usr/bin/ folder on the Yun and create a shellscript file with:     touch cam.sh
 
 then use the vim editor to edit in the camera control line:   vi cam.sh 
 
-and add the line     mjpg_streamer -i "input_uvc.so -d /dev/video0 -r 640x480 -f 15" -o "output_http.so -p 8080" & http://brumbrum.local:8080/   
+add the line     mjpg_streamer -i "input_uvc.so -d /dev/video0 -r 640x480 -f 15" -o "output_http.so -p 8080" & http://brumbrum.local:8080/   
 
 then close and save the file
 after that we want to make the file executable so we use:   chmod +x cam.sh
 
-once that has been done it's a matter of editing the existing sketches for control of the vehicle to include the Process.h library and then running the shellscript from the setup section of the sketch
+once that has been done it's a matter of editing the existing sketches for control of the vehicle to include the Process.h library and then running the shellscript from the setup section of the sketch. The DCMoSerialCntrl, button_control_using_blynk .ino files are now updated to include the webcam streaming automation.
