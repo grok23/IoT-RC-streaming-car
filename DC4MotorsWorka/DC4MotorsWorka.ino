@@ -46,6 +46,7 @@ void setup()
 
 void loop()
 {
+  delay(1000);
   directionControl();
   delay(1000);
   speedControl();
